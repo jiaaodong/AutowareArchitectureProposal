@@ -1,5 +1,42 @@
 # Autoware (Architecture Proposal)
 
+
+```bash
+sudo apt install ros-melodic-automotive-navigation-msgs ros-melodic-pacmod-msgs ros-melodic-roswww ros-melodic-velodyne-description ros-melodic-automotive-platform-msgs libfmt-dev ros-melodic-can-msgs 
+```
+
+
+规划层依赖osqp，详细安装文档参考链接：https://osqp.org/docs/get_started/sources.html
+
+下载osqp： https://dl.bintray.com/bstellato/generic/OSQP/0.4.1/osqp-0.4.1.tar.gz
+
+解压，在目录里新建build:
+
+```bash
+cd osqp
+mkdir build
+cd build
+```
+
+构建makefile：
+
+```bash
+cmake -G "Unix Makefiles" ..
+```
+
+编译OSQP：
+
+```bash
+cmake --build .
+```
+
+安装二进制：
+
+```bash
+sudo cmake --build . --target install
+```
+
+
 ![autoware](https://user-images.githubusercontent.com/8327598/69472442-cca50b00-0ded-11ea-9da0-9e2302aa1061.png)
 
 # What's this
