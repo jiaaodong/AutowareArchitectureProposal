@@ -8,32 +8,19 @@ sudo apt install ros-melodic-automotive-navigation-msgs ros-melodic-pacmod-msgs 
 
 规划层依赖osqp，详细安装文档参考链接：https://osqp.org/docs/get_started/sources.html
 
-下载osqp： https://dl.bintray.com/bstellato/generic/OSQP/0.4.1/osqp-0.4.1.tar.gz
-
-解压，在目录里新建build:
-
 ```bash
+git clone --recursive https://github.com/oxfordcontrol/osqp
+ 
+
 cd osqp
 mkdir build
 cd build
-```
+cmake .. -DBUILD_SHARED_LIBS=ON
 
-构建makefile：
+make -j6
 
-```bash
-cmake -G "Unix Makefiles" ..
-```
+sudo make install
 
-编译OSQP：
-
-```bash
-cmake --build .
-```
-
-安装二进制：
-
-```bash
-sudo cmake --build . --target install
 ```
 
 
