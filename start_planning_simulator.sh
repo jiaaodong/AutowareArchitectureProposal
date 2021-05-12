@@ -1,0 +1,1 @@
+roslaunch autoware_launch planning_simulator.launch map_path:=/home/rdcas/adam_project/AutowareArchitectureProposal/map

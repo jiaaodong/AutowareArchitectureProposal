@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /System1
         - /System1/Vehicle1
-        - /System1/Vehicle1/VehicleModel1
         - /Sensing1/LiDAR1/ConcatenatePointCloud1/Autocompute Value Bounds1
         - /Sensing1/GNSS1/PoseWithCovariance1/Covariance1/Position1
         - /Localization1/NDT1/PoseHistory1/Line1
@@ -244,7 +243,7 @@ Visualization Manager:
             - Class: rviz/PolarGridDisplay
               Color: 255; 255; 255
               Delta Range: 10
-              Enabled: false
+              Enabled: true
               Max Alpha: 1
               Max Range: 100
               Max Wave Alpha: 1
@@ -252,7 +251,7 @@ Visualization Manager:
               Min Wave Alpha: 0.20000000298023224
               Name: PolarGridDisplay
               Reference Frame: base_link
-              Value: false
+              Value: true
               Wave Color: 255; 255; 255
               Wave Velocity: 40
             - Class: rviz_plugins/TurnSignal
@@ -664,10 +663,7 @@ Visualization Manager:
               Marker Topic: /planning/mission_planning/route_marker
               Name: RouteArea
               Namespaces:
-                goal_lanelets: true
-                left_lane_bound: true
-                right_lane_bound: true
-                route_lanelets: true
+                {}
               Queue Size: 100
               Value: true
             - Alpha: 1
@@ -744,8 +740,7 @@ Visualization Manager:
                       Marker Topic: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/debug/crosswalk
                       Name: Crosswalk
                       Namespaces:
-                        slow polygon line: true
-                        stop polygon line: true
+                        {}
                       Queue Size: 100
                       Value: true
                     - Class: rviz/MarkerArray
@@ -753,11 +748,7 @@ Visualization Manager:
                       Marker Topic: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/debug/intersection
                       Name: Intersection
                       Namespaces:
-                        intersection_detection_lanelets: false
-                        path_left_edge: false
-                        path_raw: false
-                        path_right_edge: false
-                        path_with_judgeline: false
+                        {}
                       Queue Size: 100
                       Value: true
                     - Class: rviz/MarkerArray
@@ -765,11 +756,7 @@ Visualization Manager:
                       Marker Topic: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/debug/blind_spot
                       Name: Blind Spot
                       Namespaces:
-                        blind_spot_detection_area: false
-                        path_left_edge: false
-                        path_raw: false
-                        path_right_edge: false
-                        path_with_judgeline: false
+                        {}
                       Queue Size: 100
                       Value: true
                     - Class: rviz/MarkerArray
@@ -816,7 +803,7 @@ Visualization Manager:
                       Marker Topic: /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_planner/debug/marker
                       Name: ObstaclePointCloudStop
                       Namespaces:
-                        detection_polygons: true
+                        {}
                       Queue Size: 100
                       Value: true
                   Enabled: true
@@ -942,25 +929,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 47.4737663269043
+      Distance: 97.34346008300781
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 28.213634490966797
+        Y: -19.35515594482422
+        Z: -3.309114163130289e-6
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7403982281684875
+      Pitch: 1.5697963237762451
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 3.500408411026001
+      Yaw: 5.355415344238281
     Saved: ~
 Window Geometry:
   Displays:
